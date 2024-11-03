@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haiiiii...</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.clouds.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div id="vanta-bg"></div>
+
+    <div class="container">
+        <div class="card" id="nameCard">
+            <div class="macos">
+                <span class="close"></span>
+                <span class="minimize"></span>
+                <span class="maximize"></span>
+            </div>
+            <h2>Nama Kamu</h2>
+            <input type="text" id="nameInput" placeholder="Masukkan nama kamu" />
+            <button class="btn-submit" onclick="submitName()">Lanjut</button>
+        </div>
+
+        <div class="card" id="mainCard" style="display:none;">
+            <h2 id="sambutan"></h2>
+            <p>You make my heart happy in ways I can't explain. I want to be with you.</p>
+            <div class="button-container">
+                <button class="btn-yes" onclick="playVideo()">Ya</button>
+                <button class="btn-no" id="btnNo" onclick="moveCard()">Tidak</button>
+            </div>
+        </div>
+
+        <div class="card" id="cardquote" style="display:none;">
+            <h2 id="textquote"></h2>
+            <button class="btn-back" onclick="goBack()">Kembali</button>
+        </div>
+    </div>
+
+    <audio id="bgmusik" src="sound/somebody to u.mp3" preload="auto" muted></audio>
+    <audio id="quotemusik" src="sound/hati yang berbunga.mp3" preload="auto" muted></audio>
+
+
+
+</body>
+
+</html>
