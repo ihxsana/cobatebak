@@ -38,7 +38,7 @@ function submitName() {
     const nameCard = document.getElementById('nameCard');
 
     if (nameInput) {
-        sambutan.textContent = `Maukah ${nameInput} Jadi Pacarku 👉👈`;
+        sambutan.textContent = `Maukah ${nameInput} Jadi Punya Ihsan 👉👈`;
         nameCard.style.display = 'none';
         mainCard.style.display = 'block';
     } else {
